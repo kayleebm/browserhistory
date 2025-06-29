@@ -1,4 +1,4 @@
-/* Apply background and margin styling */
+/* Set global body styles */
 body {
     font-family: 'Open Sans', sans-serif;
     color: DarkBlue;
@@ -6,13 +6,16 @@ body {
     margin: 10px 50px;
   }
   
-  /* Headings use Oswald */
+  /* Set headings to use Oswald font */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
   }
   
-  /* Logos inline with text */
+  /* Make logos appear inline with text */
   img.logo {
     vertical-align: middle;
+    display: inline;
+    margin-right: 10px;
   }
+  
   
