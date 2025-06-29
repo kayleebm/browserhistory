@@ -1,1 +1,18 @@
-
+/* Apply background and margin styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: DarkBlue;
+    background-color: Ivory;
+    margin: 10px 50px;
+  }
+  
+  /* Headings use Oswald */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  /* Logos inline with text */
+  img.logo {
+    vertical-align: middle;
+  }
+  
