@@ -4,81 +4,98 @@
   <meta charset="UTF-8">
   <title>A history of browsers</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Link to CSS -->
+  <!-- Custom Styles (leave style.css empty) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>A history of browsers</h1>
-
-  <!-- Navigation Bar -->
-  <nav>
-    <ul class="navbar">
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#ie">IE</a></li>
-      <li><a href="#firefox">Firefox</a></li>
-      <li><a href="#chrome">Chrome</a></li>
-    </ul>
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+    <div class="container-fluid d-flex justify-content-evenly">
+      <a class="nav-link text-white" href="#introduction">Introduction</a>
+      <a class="nav-link text-white" href="#ie">IE</a>
+      <a class="nav-link text-white" href="#firefox">Firefox</a>
+      <a class="nav-link text-white" href="#chrome">Chrome</a>
+    </div>
   </nav>
 
-  <!-- Introduction Section (full width) -->
-  <section id="introduction">
-    <h2>Introduction</h2>
-    <p>
-      The first web browser was invented in 1990 by Tim Berners-Lee. It was called WorldWideWeb (no spaces) and was later renamed Nexus. In 1993, Marc Andreesen created a browser that was easy to use and install with the release of Mosaic (later Netscape), "the world's first popular browser", which made the World Wide Web system easy to use and more accessible to the average person. Andreesen's browser sparked the internet boom of the 1990s. These are the two major milestones in the history of the Web.
-    </p>
-    <p>
-      The wars put the Web in the hands of millions of ordinary PC users, but showed how commercialization of the Web could stymie standards efforts. Both Microsoft and Netscape liberally incorporated proprietary extensions to HTML in their products, and tried to gain an edge by product differentiation, leading to the acceptance of the Cascading Style Sheets proposed by Hakon Wium Lie over Netscape's JavaScript Style Sheets (JSSS) by W3C.
-    </p>
-    <p>Learn more about <a href="https://www.w3.org/History.html" target="_blank">W3C's history</a>.</p>
-  </section>
+  <!-- Page Content -->
+  <div class="container" style="margin-top: 80px;">
 
-  <!-- Column Browser Sections -->
-  <div class="browser-columns">
+    <!-- Page Title -->
+    <h1 class="mt-4">A history of browsers</h1>
 
-    <!-- Internet Explorer Section -->
-    <section id="ie">
-      <h2>A brief history of IE</h2>
+    <!-- Introduction Section -->
+    <section id="introduction" class="mt-4">
+      <h2>Introduction</h2>
       <p>
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/1/18/Internet_Explorer_10%2B11_logo.svg" alt="IE logo">
-        The first Internet Explorer was derived from Spyglass Mosaic. The original Mosaic came from NCSA, but since NCSA was a public entity it relied on Spyglass as its commercial licensing partner. Spyglass in turn delivered two versions of the Mosaic browser to Microsoft, one wholly based on the NCSA source code, and another engineered from scratch but conceptually modeled on the NCSA browser. Internet Explorer was initially built using the Spyglass, not the NCSA source code. The license to Microsoft provided Spyglass (and thus NCSA) with a quarterly fee plus a percentage of Microsoft's revenues for the software.
+        The first web browser was invented in 1990 by Tim Berners-Lee. It was called WorldWideWeb (no spaces) and was later renamed Nexus. In 1993, Marc Andreesen created a browser that was easy to use and install with the release of Mosaic (later Netscape), "the world's first popular browser", which made the World Wide Web system easy to use and more accessible to the average person. Andreesen's browser sparked the internet boom of the 1990s. These are the two major milestones in the history of the Web.
       </p>
       <p>
-        In March 2009 Version 8.0 was released, with the first public beta having been released on March 5, 2008. IE8 offered better support for web standards than previous versions, with plans for improved support for RSS, CSS, and Ajax, as well as full compliance for Cascading Style Sheets 2.1. It was also the first version to successfully pass the Acid2 test. In addition, Internet Explorer 8 included new features such as WebSlices and an improved phishing filter.
+        The wars put the Web in the hands of millions of ordinary PC users, but showed how commercialization of the Web could stymie standards efforts. Both Microsoft and Netscape liberally incorporated proprietary extensions to HTML in their products, and tried to gain an edge by product differentiation, leading to the acceptance of the Cascading Style Sheets proposed by Hakon Wium Lie over Netscape's JavaScript Style Sheets (JSSS) by W3C.
       </p>
-      <p>Read more at <a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank">Wikipedia’s Internet Explorer article</a>.</p>
+      <p>
+        Learn more about <a href="https://www.w3.org/History.html" target="_blank">W3C's history</a>.
+      </p>
     </section>
 
-    <!-- Firefox Section -->
-    <section id="firefox">
-      <h2>A brief history of Firefox</h2>
-      <p>
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Mozilla_Firefox_logo_2013.png" alt="Firefox logo">
-        The project which became Firefox started as an experimental branch of the Mozilla Suite called m/b (or mozilla/browser). After it had been sufficiently developed, binaries for public testing appeared in September 2002 under the name Phoenix.
-      </p>
-      <p>
-        Firefox 23 was released on August 6, 2013. It includes an updated Firefox logo, mixed content blocking enabled by default to defend against man-in-the-middle attacks, implementation of the range form control attribute in HTML5, dropping support for the blink HTML element as well as text-decoration:blink CSS element, the restriction to have to "switch to a different search provider across the entire browser," and a global browser console, a new network monitor among other things. 
-      </p>
-      <p>Explore Firefox features at <a href="https://www.mozilla.org/en-US/firefox/" target="_blank">mozilla.org</a>.</p>
-    </section>
+    <!-- Browser Sections as Columns -->
+    <div class="row mt-5">
 
-    <!-- Chrome Section -->
-    <section id="chrome">
-      <h2>A brief history of Chrome</h2>
-      <p>
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png" alt="Chrome logo">
-        Google's Eric Schmidt opposed the development of an independent web browser for six years. He stated that "at the time, Google was a small company," and he did not want to go through "bruising browser wars." After co-founders Sergey Brin and Larry Page hired several Mozilla Firefox developers and built a demonstration of Chrome, however, Schmidt admitted that "It was so good that it essentially forced me to change my mind."
-      </p>
-      <p>
-        In December 2010 Google announced that to make it easier for businesses to use Chrome they would provide an official Chrome MSI package. For business use it is helpful to have full-fledged MSI packages that can be customized via transform files (.mst) - but the MSI provided with Chrome is only a very limited MSI wrapper fitted around the normal installer, and many businesses find that this arrangement does not meet their needs.
-      </p>
-      <p>Download Chrome at <a href="https://www.google.com/chrome/" target="_blank">google.com/chrome</a>.</p>
-    </section>
+      <!-- IE Column -->
+      <section id="ie" class="col mb-4">
+        <h2>A brief history of IE</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Internet_Explorer_10%2B11_logo.svg" alt="IE logo" width="100" class="float-start me-3 mb-2">
+        <p>
+          The first Internet Explorer was derived from Spyglass Mosaic. The original Mosaic came from NCSA, but since NCSA was a public entity it relied on Spyglass as its commercial licensing partner. Spyglass in turn delivered two versions of the Mosaic browser to Microsoft, one wholly based on the NCSA source code, and another engineered from scratch but conceptually modeled on the NCSA browser. Internet Explorer was initially built using the Spyglass, not the NCSA source code. The license to Microsoft provided Spyglass (and thus NCSA) with a quarterly fee plus a percentage of Microsoft's revenues for the software.
+        </p>
+        <p>
+          In March 2009 Version 8.0 was released, with the first public beta having been released on March 5, 2008. IE8 offered better support for web standards than previous versions, with plans for improved support for RSS, CSS, and Ajax, as well as full compliance for Cascading Style Sheets 2.1. It was also the first version to successfully pass the Acid2 test. In addition, Internet Explorer 8 included new features such as WebSlices and an improved phishing filter.
+        </p>
+        <p>
+          Read more at <a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank">Wikipedia’s Internet Explorer article</a>.
+        </p>
+      </section>
 
-  </div>
+      <!-- Firefox Column -->
+      <section id="firefox" class="col mb-4">
+        <h2>A brief history of Firefox</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Mozilla_Firefox_logo_2013.png" alt="Firefox logo" width="100" class="float-start me-3 mb-2">
+        <p>
+          The project which became Firefox started as an experimental branch of the Mozilla Suite called m/b (or mozilla/browser). After it had been sufficiently developed, binaries for public testing appeared in September 2002 under the name Phoenix.
+        </p>
+        <p>
+          Firefox 23 was released on August 6, 2013. It includes an updated Firefox logo, mixed content blocking enabled by default to defend against man-in-the-middle attacks, implementation of the range form control attribute in HTML5, dropping support for the blink HTML element as well as text-decoration:blink CSS element, the restriction to have to "switch to a different search provider across the entire browser," and a global browser console, a new network monitor among other things.
+        </p>
+        <p>
+          Explore Firefox features at <a href="https://www.mozilla.org/en-US/firefox/" target="_blank">mozilla.org</a>.
+        </p>
+      </section>
+
+      <!-- Chrome Column -->
+      <section id="chrome" class="col mb-4">
+        <h2>A brief history of Chrome</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png" alt="Chrome logo" width="100" class="float-start me-3 mb-2">
+        <p>
+          Google's Eric Schmidt opposed the development of an independent web browser for six years. He stated that "at the time, Google was a small company," and he did not want to go through "bruising browser wars." After co-founders Sergey Brin and Larry Page hired several Mozilla Firefox developers and built a demonstration of Chrome, however, Schmidt admitted that "It was so good that it essentially forced me to change my mind."
+        </p>
+        <p>
+          In December 2010 Google announced that to make it easier for businesses to use Chrome they would provide an official Chrome MSI package. For business use it is helpful to have full-fledged MSI packages that can be customized via transform files (.mst) - but the MSI provided with Chrome is only a very limited MSI wrapper fitted around the normal installer, and many businesses find that this arrangement does not meet their needs.
+        </p>
+        <p>
+          Download Chrome at <a href="https://www.google.com/chrome/" target="_blank">google.com/chrome</a>.
+        </p>
+      </section>
+
+    </div> <!-- End Row -->
+
+  </div> <!-- End Container -->
+
+  <!-- Bootstrap Bundle JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
